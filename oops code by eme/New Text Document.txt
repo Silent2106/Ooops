@@ -1,0 +1,170 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+//...............interface...................... 
+// interface Teacher{
+//   void subject();
+// }
+// class Student implements Teacher {
+//   public  void subject(){
+//         System.out.println("Subect taught is hindi");
+//     }
+//     public static void main(String[] args) {
+//          Student st = new Student();
+//          st.subject();
+//     }
+// }
+// ............................abstract class..................
+// abstract class Teacher{
+//     abstract void subject();
+// }
+// class Student extends Teacher{
+//     void subject(){
+//           System.out.println("Subect taught is hindi");
+//     }
+//     public static void main(String[] args) {
+//          Student st = new Student();
+//          st.subject();
+//     }
+// }
+//.....................method overridng...............
+// different class , sae object..
+// class Cat {
+//     public void sound() {
+//         System.out.println("Cat is drinking milk");
+//     }
+// }
+
+// class Lion extends Teacher {
+//     public void sniff() {
+//         System.out.println("Lion is sniffing");
+//     }
+
+//     public void sound() {
+//         System.out.println("Lion is drinking milk and mama of cat");
+//     }
+
+//     public static void main(String[] args) {
+//         Lion sher = new Lion();
+//         sher.sniff();
+//         sher.sound();
+//     }
+// }
+// method overloading...................
+// same class diff parameter with diff argumnets and fif return .
+// class Teacher{
+//     public int experience(int x){
+//         return x;
+//     }
+//     public void experi(){
+//         System.out.println("experience is of 3 year");
+//     }
+    
+//     public static void main(String[] args){
+//         Teacher t= new Teacher();
+//         System.out.println(t.experience(3));
+//         t.experi();
+//     }
+// }
+// ................inheritance...................
+// class Parent{
+//     String sirname="Singla";
+// }
+// class Child extends Parent{
+//     String name ="Ayush";
+//      public static void main(String[] args){
+//         Child c= new Child();
+//          System.out.println(c.name);
+//          System.out.println(c.sirname);
+// }
+// }
+
+  // mmultilevel inheritance............
+// class Employee{  
+//  float salary=40000;  
+// }  
+// class Assistant extends Employee{
+//     int stipend = 25000;
+// }
+// class Programmer extends Assistant{  
+//  int bonus=10000;  
+//  public static void main(String args[]){  
+//   Programmer p=new Programmer();  
+//   System.out.println("Programmer salary is:"+p.salary);
+//       System.out.println("Programmer salary is:"+p.stipend);  
+//   System.out.println("Bonus of Programmer is:"+p.bonus);  
+// }  
+// }  
+// single level inheritnce..............
+// class Employee{  
+//  float salary=40000;  
+// }  
+// class Programmer extends Assistant{  
+//  int bonus=10000;  
+//  public static void main(String args[]){  
+//   Programmer p=new Programmer();  
+//   System.out.println("Programmer salary is:"+p.salary);
+//   System.out.println("Bonus of Programmer is:"+p.bonus);  
+// }  
+// }  
+// multiple inheritance achieved by interface.......
+// interface Employee{
+//     void salary();
+// }
+// interface Assistant{
+//     void stipend();
+// }
+// class Programmer implements Employee,Assistant{
+// public void salary(){
+//     System.out.println("salary is 50K");
+// }
+// public void stipend(){
+//     System.out.println("stipend is 60K");
+// }
+// public static void main(String args[]){  
+//   Programmer p=new Programmer();  
+//   p.salary();
+//   p.stipend();
+// } 
+// }
+
+// encapsulation=>data.hiding+wrapping+get/set
+// getter......
+// class Teacher{
+//     private String name ="Deepshikha ";
+//     public String getName(){
+//         return name;
+//     }
+// }
+// class Student{
+//     public static void main(String args[]){  
+//   Teacher st =new Teacher();  
+//   System.out.println(st.getName());
+// } 
+// }
+// setter.......
+// class Teacher{
+//     String name="Deepshikha";
+//     public String getName(){
+//         return name;
+//     }
+//     //setter method for name  
+// public void setName(String name){  
+// this.name=name  ;
+// }  
+// }
+// class Student{
+//       public static void main(String args[]){  
+//   Teacher st =new Teacher();  
+//   st.setName("Yamini Ratwal");
+//   System.out.println(st.getName());
+// } 
+// }
+// Accesss modifiers in jav ......
+// privte (within its class)
+// class A{
+//     private String name ="ayush";
+// }
+// class B {
+//     A a = new A();
+//     System.out.println(a.name);
+// }// gives error  
